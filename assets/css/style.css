@@ -3,5 +3,31 @@
 }
 
 .mega {
-    min-width: 610px !important;
+    min-width: 800px !important;
+    /* top: 100% !important; */
+    /* height: auto; */
+    
+}
+
+.collection {
+
+ padding: 0px 0px !important;
+ margin: 0px 0px !important;
+ 
+}
+
+
+.collection-item {
+
+    text-align: right !important;
+    color:red !important;
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+    line-height: normal !important;
+    /* box-sizing: content-box !important; */
+    min-height: fit-content !important;
+}
+
+li{
+    /* height: 15px !important; */
 }

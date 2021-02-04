@@ -1,7 +1,21 @@
-$(document).ready(function(){
-    //get api to display nfl team when user hover over "nfl" on nav bar
-    function nflDisplay() {
 
+$(document).ready(function(){
+  
+ $(".dropdown-trigger").dropdown({
+     coverTrigger: false,
+     closeOnClick: false,
+    //   inDuration: 300,
+        //   outDuration: 225,
+        //   constrainWidth: false, // Does not change width of dropdown to that of the activator
+          hover: true, // Activate on hover
+          gutter: 0, // Spacing from edge
+          belowOrigin: false, // Displays dropdown below the button
+        //   alignment: 'right', // Displays dropdown with edge aligned to the left of button
+        //   stopPropagation: false // Stops event propagation
+ });
+
+  //get api to display nfl team when user hover over "nfl" on nav bar
+    function nflDisplay() {
         //create var from api link 
         var requestNflUrl = "https://api.sportsdata.io/v3/nfl/scores/json/AllTeams?key=c92709fa7d9a4261bf1ee17785767b5b";
       
