@@ -1,3 +1,4 @@
+// materialize functions for drop downs and card accordian. 
 $(".dropdown-trigger").dropdown({
     coverTrigger: false,
     closeOnClick: false,
@@ -14,11 +15,12 @@ $(".dropdown-trigger").dropdown({
 
 $(document).ready(function () {
 
+$('.collapsible').collapsible();
 
-
-    $('.collapsible').collapsible({
-        accordion: false
-    });
+  document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = M.Collapsible.init(elems, options);
+  });
 
     //vh get api to display NFL team when user hover over "NFL" on nav bar
     function nflDisplay() {
